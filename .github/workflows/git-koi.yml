@@ -2,12 +2,14 @@ name: Update Git Koi
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Runs nightly at midnight
-  workflow_dispatch: # Allows manual trigger from the Actions tab
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 
 jobs:
   update-koi:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
 
