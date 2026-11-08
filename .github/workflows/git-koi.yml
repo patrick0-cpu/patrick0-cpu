@@ -1,0 +1,23 @@
+name: Update Git Koi
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Runs nightly at midnight
+  workflow_dispatch: # Allows manual trigger from the Actions tab
+
+jobs:
+  update-koi:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate Git Koi
+        uses: yalongwastaken/git-koi@v1
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add git-koi.gif
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update git-koi GIF"
+          git push
