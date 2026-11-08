@@ -1,4 +1,6 @@
-![Git Koi](git-koi.gif)
+  <p align="center">
+    <img src="koi/koi.gif" width="256" alt="My koi" />
+  </p>
 <!--
 **patrick0-cpu/patrick0-cpu** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
