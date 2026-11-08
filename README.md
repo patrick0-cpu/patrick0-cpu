@@ -1,5 +1,4 @@
-## Hi there 👋
-
+![Git Koi](git-koi.gif)
 <!--
 **patrick0-cpu/patrick0-cpu** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
